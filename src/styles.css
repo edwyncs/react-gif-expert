@@ -1,0 +1,199 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #121212;
+  }
+  
+  body{
+    margin: 0;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background: url('./media/banner.png') fixed no-repeat 50% 50%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    height: 15rem;
+    align-items: center;
+  }
+
+  input {
+    background-color: white;
+    border-radius: 50px;
+    border: 0px solid rgb(97, 32, 158);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.03);
+    color: black;
+    font-size: 1.2rem;
+    outline: none;
+    padding: 10px 15px;
+    position: relative;
+    min-width: 17em;
+  }
+
+  header h1{
+    font-size: 70px;
+    background-color: transparent;
+    margin: 69px 0 69px;
+    color: whitesmoke;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 3rem;
+    margin-bottom: 48px;
+    margin-left: 2rem;
+    color: whitesmoke;
+  }
+
+  form {
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
+  }
+  
+  .card-grid {
+    column-gap: 2em;
+    /*grid-auto-flow: dense;
+    display: grid;
+     margin: 0 auto;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr)); */
+    columns: 4;
+    margin: 0 2rem 0 2rem;
+  }
+  
+  .card {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 2em;
+    border-radius: 15px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+  
+  .card p{
+    background-color: transparent;
+    color: whitesmoke;
+    flex: 1;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 5px 20px 0px 20px;
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .search_form{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
+
+  }
+
+  .btn_buscar p{
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.1rem;
+  }
+
+  .btn_buscar{
+	  position: absolute;
+    display: flex;
+    border-radius: 50px;
+	  top: 0;
+	  right: 0;
+	  width: 125px;
+	  height: 100%;
+	  background: rgb(97, 32, 158);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .btn_buscar:hover{
+    background: rgb(72, 16, 126);	
+  }
+
+  .calcu form input{
+    border: 1px solid rgb(97, 32, 158);
+    width: 5%;
+  }
+
+  .notFound{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
+  }
+
+  .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+  }
+
+  .icon i{
+    color: rgba(73, 16, 126);	
+    text-shadow: 0px 5px 10px rgba(0, 0, 5, 0.3);
+    font-size: 150px;
+  }
+
+  .icon p{
+    color: rgba(73, 16, 126);
+    text-shadow: 0px 5px 10px rgba(0, 0, 5, 0.3);
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+
+  i{
+    color: rgba(73, 16, 126);	
+    text-shadow: 0px 5px 10px rgba(0, 0, 5, 0.3);
+    font-size: 150px;
+  }
+
+  .notFound p{
+    color: rgb(72, 16, 126);
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+
+  @media(max-width: 768px){
+    .card-grid {
+      columns: 1;
+      margin: 15px;
+    }
+  }
+
+  @media(min-width: 769px){
+    .card-grid {
+      columns: 2;
+    }
+  }
+
+  @media(min-width: 1400px){
+    .card-grid {
+      columns: 3;
+    }
+  }
+
+  @media(min-width: 1900px){
+    .card-grid {
+      columns: 4;
+    }
+  }
