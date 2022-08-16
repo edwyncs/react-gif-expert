@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export const Iconos = ({type}) => {
   const returnIcon = {
     loading: () => { return (
-      <div className='icon'>
+      <div className='icon' aria-label='loading'>
         <i className="fa-spin fa-solid fa-circle-notch"></i>
       </div>
     ) 
@@ -18,7 +18,7 @@ export const Iconos = ({type}) => {
     }, 
     empty: () => {
       return (
-        <div className='icon'>
+        <div className='icon' aria-label='empty'>
           <i className="fa-regular fa-images"></i>
           <p>No hay gifs aqui :0</p>
         </div>
